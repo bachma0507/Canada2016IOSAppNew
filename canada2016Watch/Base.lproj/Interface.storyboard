@@ -95,25 +95,35 @@
             <objects>
                 <controller identifier="SessionDetailInterfaceController" title="SessionDetail" id="RbC-24-k6a" customClass="SessionDetailInterfaceController">
                     <items>
-                        <group width="1" height="37" alignment="left" layout="vertical" id="P8Z-dy-aHm">
+                        <table alignment="left" id="Z2r-Dh-SYk">
                             <items>
-                                <label width="1" alignment="left" text="SessionName" numberOfLines="3" id="Cad-nJ-07f">
-                                    <fontDescription key="font" type="boldSystem" pointSize="10"/>
-                                </label>
+                                <tableRow identifier="SessionDetailTableRow" id="6uL-kl-G5f" customClass="SessionDetailTableRow">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="Ldg-M4-VFD">
+                                        <items>
+                                            <label width="1" alignment="left" text="SessionName" numberOfLines="3" id="Cad-nJ-07f">
+                                                <fontDescription key="font" type="boldSystem" pointSize="10"/>
+                                            </label>
+                                            <group width="1" alignment="left" id="FG6-Ye-jhA">
+                                                <items>
+                                                    <label width="1" alignment="left" text="SessionDescription" numberOfLines="300" id="E9h-20-3kc">
+                                                        <fontDescription key="font" type="system" pointSize="9"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="sessionDescLabel" destination="E9h-20-3kc" id="7I3-nO-LHA"/>
+                                        <outlet property="sessionNameLabel" destination="Cad-nJ-07f" id="cJ7-wa-w0C"/>
+                                    </connections>
+                                </tableRow>
                             </items>
-                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                        </group>
-                        <group width="1" height="97" alignment="left" id="FG6-Ye-jhA">
-                            <items>
-                                <label width="1" alignment="left" text="SessionDescription" numberOfLines="10" id="E9h-20-3kc">
-                                    <fontDescription key="font" type="system" pointSize="9"/>
-                                </label>
-                            </items>
-                        </group>
+                        </table>
                     </items>
                     <connections>
-                        <outlet property="sessionDescriptionLabel" destination="E9h-20-3kc" id="K0c-mg-4hM"/>
-                        <outlet property="sessionNameLabel" destination="Cad-nJ-07f" id="2Y5-vD-7IJ"/>
+                        <outlet property="SessionDetailTable" destination="Z2r-Dh-SYk" id="t9u-tU-kSU"/>
                     </connections>
                 </controller>
             </objects>

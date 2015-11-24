@@ -68,6 +68,7 @@
 		4C1FC1001761131A00C1C09B /* ipad_144x144@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FC0FF1761131A00C1C09B /* ipad_144x144@2x.png */; };
 		4C1FC1081761139C00C1C09B /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FC1071761139C00C1C09B /* Default-Landscape~ipad.png */; };
 		4C1FC10A176113A200C1C09B /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FC109176113A200C1C09B /* Default-Landscape@2x~ipad.png */; };
+		4C210F5A1C036095005CFDB2 /* SessionDetailTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C210F591C036095005CFDB2 /* SessionDetailTableRow.m */; };
 		4C2368FB17FB79D3001843B4 /* backbutton-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C2368FA17FB79D3001843B4 /* backbutton-default.png */; };
 		4C246212178C772D00F0165B /* web.css in Resources */ = {isa = PBXBuildFile; fileRef = 4C246210178C772D00F0165B /* web.css */; };
 		4C24621A178C95D800F0165B /* contact.html in Resources */ = {isa = PBXBuildFile; fileRef = 4C246219178C95D800F0165B /* contact.html */; };
@@ -739,6 +740,8 @@
 		4C1FC0FF1761131A00C1C09B /* ipad_144x144@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad_144x144@2x.png"; sourceTree = "<group>"; };
 		4C1FC1071761139C00C1C09B /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		4C1FC109176113A200C1C09B /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		4C210F581C036095005CFDB2 /* SessionDetailTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionDetailTableRow.h; sourceTree = "<group>"; };
+		4C210F591C036095005CFDB2 /* SessionDetailTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionDetailTableRow.m; sourceTree = "<group>"; };
 		4C2368FA17FB79D3001843B4 /* backbutton-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton-default.png"; sourceTree = "<group>"; };
 		4C246210178C772D00F0165B /* web.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = web.css; sourceTree = "<group>"; };
 		4C246219178C95D800F0165B /* contact.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = contact.html; sourceTree = "<group>"; };
@@ -2119,6 +2122,8 @@
 				4CA3FC661BFD877D00D226CF /* SessionsWatch.m */,
 				4C79D0CB1C02228D00AA6941 /* SessionDetailInterfaceController.h */,
 				4C79D0CC1C02228D00AA6941 /* SessionDetailInterfaceController.m */,
+				4C210F581C036095005CFDB2 /* SessionDetailTableRow.h */,
+				4C210F591C036095005CFDB2 /* SessionDetailTableRow.m */,
 			);
 			path = "canada2016Watch Extension";
 			sourceTree = "<group>";
@@ -3915,6 +3920,7 @@
 				4C79D0CD1C02228D00AA6941 /* SessionDetailInterfaceController.m in Sources */,
 				4C5875641BFA28E3003EC2C8 /* CoreDataHelper.m in Sources */,
 				4C58756A1BFC204D003EC2C8 /* CscheduleWatch.m in Sources */,
+				4C210F5A1C036095005CFDB2 /* SessionDetailTableRow.m in Sources */,
 				4C58754F1BFA2779003EC2C8 /* InterfaceController.m in Sources */,
 				4C517C8B1BFD6678000A05A1 /* DetailTableRow.m in Sources */,
 				4CA3FC671BFD877D00D226CF /* SessionsWatch.m in Sources */,

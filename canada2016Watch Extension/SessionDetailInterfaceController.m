@@ -7,6 +7,7 @@
 //
 
 #import "SessionDetailInterfaceController.h"
+#import "SessionDetailTableRow.h"
 
 @interface SessionDetailInterfaceController ()
 
@@ -14,7 +15,6 @@
 
 @implementation SessionDetailInterfaceController
 
-@synthesize sessionDescriptionLabel, sessionNameLabel;
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
@@ -38,20 +38,23 @@
     
     self.objectsArray = myResults;
     
-    //int i;
+    [self.SessionDetailTable setNumberOfRows:self.objectsArray.count withRowType:@"SessionDetailTableRow"];
     
-    //NSManagedObject * items = self.objectsArray[i];
+    for (int i = 0; i < self.objectsArray.count; i++) {
+        SessionDetailTableRow *sessionDetailRow = [self.SessionDetailTable rowControllerAtIndex:i];
     
-    NSManagedObject *item = myResults[0];
     
-    [sessionNameLabel setText:[NSString stringWithFormat:@"%@",[item valueForKey:@"sessionName"]]];
-    [sessionDescriptionLabel setText:[NSString stringWithFormat:@"%@",[item valueForKey:@"sessionDesc"]]];
+    NSManagedObject *item = myResults[i];
     
-    NSString * name = [NSString stringWithFormat:@"%@",[self.objectsArray valueForKey:@"sessionName"]];
-    NSString * desc = [NSString stringWithFormat:@"%@",[self.objectsArray valueForKey:@"sessionDesc"]];
+    sessionDetailRow.sessionNameLabel.text = [NSString stringWithFormat:@"%@",[item valueForKey:@"sessionName"]];
+    sessionDetailRow.sessionDescLabel.text = [NSString stringWithFormat:@"%@",[item valueForKey:@"sessionDesc"]];
     
-    NSLog(@"Value of name is: %@", name);
-    NSLog(@"Value of desc is: %@", desc);
+    //NSString * name = [NSString stringWithFormat:@"%@",[self.objectsArray valueForKey:@"sessionName"]];
+    //NSString * desc = [NSString stringWithFormat:@"%@",[self.objectsArray valueForKey:@"sessionDesc"]];
+    
+    //NSLog(@"Value of name is: %@", name);
+    //NSLog(@"Value of desc is: %@", desc);
+    }
 }
 
 - (void)willActivate {

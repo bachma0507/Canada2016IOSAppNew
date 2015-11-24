@@ -13,10 +13,10 @@
 #import "SessionsWatch.h"
 
 @interface SessionDetailInterfaceController : WKInterfaceController
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *sessionNameLabel;
-@property (strong, nonatomic) IBOutlet WKInterfaceLabel *sessionDescriptionLabel;
+
 
 //@property (nonatomic, strong) NSMutableArray * myNewArray;
+@property (strong, nonatomic) IBOutlet WKInterfaceTable *SessionDetailTable;
 
 @property (strong, nonatomic) NSArray *objectsArray;
 
