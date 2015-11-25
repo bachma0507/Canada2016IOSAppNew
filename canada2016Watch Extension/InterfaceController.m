@@ -22,19 +22,26 @@
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-    
+    [self updateWatchTable];
 
     // Configure interface objects here.
-    
+//    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
-        [self updateWatchTable];
+        [self updateData];
+        //[self updateSessions];
         
     });
     
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
+        //[self updateData];
+        [self updateSessions];
+        
+    });
     
-    [self updateData];
-    [self updateSessions];
-    
+    //[self updateWatchTable];
+    //[self updateData];
+    //[self updateSessions];
+    //[self updateWatchTable];
     
 }
 
@@ -54,8 +61,20 @@
     
     NSArray *myResults = [[[CoreDataHelper sharedHelper] context] executeFetchRequest:fetchRequest error:nil];
     
-    self.objectsTable = myResults;
+//    CoreDataHelper * myhelper = [[CoreDataHelper alloc] init];
+//    
+//    NSArray * myNewResults;
+//    
+//    NSArray * myResults = [myhelper getResults:myNewResults];
     
+    self.objectsTable = myResults;
+    NSLog(@"Schedule myResults count: %lu", (unsigned long)myResults.count);
+    if (myResults.count == 0) {
+        [self pushControllerWithName:@"ErrorInterfaceController"
+                             context:nil];
+    }
+    
+    else {
     NSLog(@"Schedule myResults count: %lu", (unsigned long)myResults.count);
     
     [self.table setNumberOfRows:self.objectsTable.count withRowType:@"ScheduleTableRow"];
@@ -70,7 +89,7 @@
             scheduleRow.date.text = [NSString stringWithFormat:@"%@",[item valueForKey:@"date"]];
             [self.myNewArray addObject:[item valueForKey:@"date"]];
         }
-
+    }
     
 }
 
@@ -98,7 +117,10 @@
             NSError *error = nil;
             // Save the object to persistent store
             if (![contextCschedule save:&error]) {
+            
                 NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+                [self pushControllerWithName:@"ErrorInterfaceController"
+                                     context:nil];
             }
             NSLog(@"CSchedule object deleted!");
             
@@ -110,23 +132,66 @@
     //CREATE CSCHEDULE OBJECTS
 #pragma mark - Create CSchedule Objects
     
+    //////
+    //NSURLRequest* requestForScheduleData = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://speedyreference.com/cscheduleW16.php"]];
+    //NSURLResponse* response = nil;
+    //NSData* data;
+    //NSError* error = nil; //do it always
+    
+    //NSData* data = [NSURLConnection sendSynchronousRequest:requestForScheduleData returningResponse:&response error:&error]; //for saving all of received data in non-serialized view
+    
+    //[[NSURLSession sharedSession] dataTaskWithRequest:requestForScheduleData completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        
+    //}];
+    
+    
+    
+    //////
+    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
         
-        NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/cscheduleW16.php"];
-        NSData * data = [NSData dataWithContentsOfURL:url];
-        NSError * error;
+//        NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/cscheduleW16.php"];
+//        NSData * data = [NSData dataWithContentsOfURL:url];
+//        NSError * error;
         //added code 092715 to handle exception
+        
+        //////
+        //NSURLRequest* requestForScheduleData = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://speedyreference.com/cscheduleW16.php"]];
+        //NSURLResponse* response = nil;
+        //NSData* data;
+        //NSError* error = nil; //do it always
+        
+        //NSData* data = [NSURLConnection sendSynchronousRequest:requestForScheduleData returningResponse:&response error:&error]; //for saving all of received data in non-serialized view
+        
+//        NSURL *URL = [NSURL URLWithString:@"https://speedyreference.com/cscheduleW16.php"];
+//        NSURLRequest *requestForScheduleData = [NSURLRequest requestWithURL:URL];
+//        
+//        NSURLSession *session = [NSURLSession sharedSession];
+//        
+//        NSURLSessionDataTask *task = [session dataTaskWithRequest:requestForScheduleData completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        
+        //}];
+
+        NSURLSession *session = [NSURLSession sharedSession];
+        NSURLSessionDataTask *dataTask = [session dataTaskWithURL:[NSURL URLWithString:@"https://speedyreference.com/cscheduleW16.php"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        
         if ([data length] == 0 && error == nil)
         {
             NSLog(@"No response from server");
+            [self pushControllerWithName:@"ErrorInterfaceController"
+                                 context:nil];
         }
         else if (error != nil && error.code == NSURLErrorTimedOut)
         {
             NSLog(@"Request time out");
+            [self pushControllerWithName:@"ErrorInterfaceController"
+                                 context:nil];
         }
         else if (error != nil)
         {
             NSLog(@"Unexpected error occur: %@", error.localizedDescription);
+            [self pushControllerWithName:@"ErrorInterfaceController"
+                                 context:nil];
         }
         // response of the server without error will be handled here
         else if ([data length] > 0 && error == nil)
@@ -192,6 +257,10 @@
                         // Save the object to persistent store
                         if (![context save:&error]) {
                             NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+                            
+                            
+                            [self pushControllerWithName:@"ErrorInterfaceController"
+                                                 context:nil];
                         }
                         NSLog(@"You created a new Cschedule object!");
                     }
@@ -203,6 +272,9 @@
                 
             });
         }
+            
+            }];
+        [dataTask resume];
     });
 
     
@@ -239,6 +311,8 @@
                 // Save the object to persistent store
                 if (![contextSessions save:&error]) {
                     NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+                    [self pushControllerWithName:@"ErrorInterfaceController"
+                                         context:nil];
                 }
                 NSLog(@"Session object deleted!");
                 
@@ -254,14 +328,43 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
         
         
-        NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
+        //NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
         
+        //NSData * data = [NSData dataWithContentsOfURL:url];
         
+//        NSURL *URL = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
+//        NSURLRequest *requestForScheduleData = [NSURLRequest requestWithURL:URL];
+//        
+//        NSURLSession *session = [NSURLSession sharedSession];
+//        
+//        NSURLSessionDataTask *task = [session dataTaskWithRequest:requestForScheduleData completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
+        NSURLSession *session = [NSURLSession sharedSession];
+        NSURLSessionDataTask *dataTask = [session dataTaskWithURL:[NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
-        NSData * data = [NSData dataWithContentsOfURL:url];
-        
-        
+            if ([data length] == 0 && error == nil)
+            {
+                NSLog(@"No response from server");
+                [self pushControllerWithName:@"ErrorInterfaceController"
+                                     context:nil];
+            }
+            else if (error != nil && error.code == NSURLErrorTimedOut)
+            {
+                NSLog(@"Request time out");
+                [self pushControllerWithName:@"ErrorInterfaceController"
+                                     context:nil];
+            }
+            else if (error != nil)
+            {
+                NSLog(@"Unexpected error occur: %@", error.localizedDescription);
+                [self pushControllerWithName:@"ErrorInterfaceController"
+                                     context:nil];
+            }
+            // response of the server without error will be handled here
+            else if ([data length] > 0 && error == nil)
+            {
+            
+            
         //TRUNCATE FRONT AND END OF JSON. ALSO JSON STATEMENT AND CHANGE SESSIONDATE DATE FORMAT
         NSString * dataStr = [[NSString alloc] initWithData: data encoding:NSUTF8StringEncoding];
         NSString *newDataStr = [dataStr substringWithRange:NSMakeRange(13, [dataStr length]-13)];
@@ -396,6 +499,8 @@
                     // Save the object to persistent store
                     if (![context save:&error]) {
                         NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+                        [self pushControllerWithName:@"ErrorInterfaceController"
+                                             context:nil];
                         
                     }
                     NSLog(@"You updated an object in Sessions");
@@ -473,6 +578,8 @@
                     // Save the object to persistent store
                     if (![context save:&error]) {
                         NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+                        [self pushControllerWithName:@"ErrorInterfaceController"
+                                             context:nil];
                     }
                     NSLog(@"You created a new Session object! Session ID: %@",mySessions.sessionID);
                     //NSLog(@"Object created sessionName is: %@",mySessions.sessionName);
@@ -483,12 +590,16 @@
                 
             }
             
-            
+        
         });
         
+            }
+            
+        }];
+        [dataTask resume];
     });
     
-    
+                                          
     
 }
 

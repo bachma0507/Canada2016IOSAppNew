@@ -8,7 +8,7 @@
         <!--Schedule-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller title="Schedule" id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller identifier="InterfaceController" title="Schedule" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
                         <table alignment="left" id="eSA-yx-Sor">
                             <items>
@@ -42,6 +42,25 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="476" y="371"/>
+        </scene>
+        <!--Error-->
+        <scene sceneID="f0Z-kr-Awi">
+            <objects>
+                <controller identifier="ErrorInterfaceController" title="Error" id="hE6-Z8-hpA" customClass="ErrorInterfaceController">
+                    <items>
+                        <label width="1" alignment="left" text="Apple Watch is unable to access the BICSI app. Please try again." numberOfLines="5" id="G3q-zR-BBC">
+                            <fontDescription key="font" type="system" pointSize="10"/>
+                        </label>
+                        <button width="1" alignment="left" title="Try Again" id="MWP-eO-eIO">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="tryAgain" destination="hE6-Z8-hpA" id="IhU-lC-BBc"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="601" y="153"/>
         </scene>
         <!--Detail-->
         <scene sceneID="9tK-Dt-H3b">

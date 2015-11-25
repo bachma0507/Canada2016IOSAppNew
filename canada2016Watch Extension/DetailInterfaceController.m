@@ -55,6 +55,14 @@
     
     self.objectsArray = myResults;
     
+    NSLog(@"Schedule myResults count: %lu", (unsigned long)myResults.count);
+    if (myResults.count == 0) {
+        [self pushControllerWithName:@"ErrorInterfaceController"
+                             context:nil];
+    }
+    
+    else {
+    
     NSLog(@"Sessions myResults count: %lu", (unsigned long)myResults.count);
     NSLog(@"Sessions objectsArray count: %lu", (unsigned long)self.objectsArray.count);
     
@@ -95,7 +103,7 @@
         NSLog(@"SessionID is: %@", sessionIdStr);
         
     }
-    
+    }
     
 }
 

@@ -203,6 +203,9 @@
 		4C6CFCF0197036A900AEB8B2 /* cec_background_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6CFCEA197036A900AEB8B2 /* cec_background_ipad@2x.png */; };
 		4C6CFCF1197036A900AEB8B2 /* contactus_background_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6CFCEB197036A900AEB8B2 /* contactus_background_ipad.png */; };
 		4C6CFCF2197036A900AEB8B2 /* contactus_background_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C6CFCEC197036A900AEB8B2 /* contactus_background_ipad@2x.png */; };
+		4C6E97C71C0503E3004B7F61 /* SessionsWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3FC661BFD877D00D226CF /* SessionsWatch.m */; };
+		4C6E97C81C0503E8004B7F61 /* CscheduleWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5875691BFC204D003EC2C8 /* CscheduleWatch.m */; };
+		4C73B3731C057617008A1E58 /* ErrorInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C73B3721C057617008A1E58 /* ErrorInterfaceController.m */; };
 		4C74593317567FF800A76417 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C74593217567FF800A76417 /* Security.framework */; };
 		4C7459351756801600A76417 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7459341756801600A76417 /* CoreData.framework */; };
 		4C7459371756802F00A76417 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7459361756802F00A76417 /* MobileCoreServices.framework */; };
@@ -948,6 +951,8 @@
 		4C6CFCEA197036A900AEB8B2 /* cec_background_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cec_background_ipad@2x.png"; sourceTree = "<group>"; };
 		4C6CFCEB197036A900AEB8B2 /* contactus_background_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contactus_background_ipad.png; sourceTree = "<group>"; };
 		4C6CFCEC197036A900AEB8B2 /* contactus_background_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contactus_background_ipad@2x.png"; sourceTree = "<group>"; };
+		4C73B3711C057617008A1E58 /* ErrorInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorInterfaceController.h; sourceTree = "<group>"; };
+		4C73B3721C057617008A1E58 /* ErrorInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorInterfaceController.m; sourceTree = "<group>"; };
 		4C74593217567FF800A76417 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4C7459341756801600A76417 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4C7459361756802F00A76417 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -2124,6 +2129,8 @@
 				4C79D0CC1C02228D00AA6941 /* SessionDetailInterfaceController.m */,
 				4C210F581C036095005CFDB2 /* SessionDetailTableRow.h */,
 				4C210F591C036095005CFDB2 /* SessionDetailTableRow.m */,
+				4C73B3711C057617008A1E58 /* ErrorInterfaceController.h */,
+				4C73B3721C057617008A1E58 /* ErrorInterfaceController.m */,
 			);
 			path = "canada2016Watch Extension";
 			sourceTree = "<group>";
@@ -3770,6 +3777,7 @@
 				4C9B1E2519E34387007E0F51 /* JSQMessagesCollectionViewCellOutgoing.m in Sources */,
 				4CC0ADF719E80BC800C42CCF /* ChatRegisterViewController.m in Sources */,
 				4C9B1D8F19E31F4B007E0F51 /* AFHTTPRequestOperationManager.m in Sources */,
+				4C6E97C71C0503E3004B7F61 /* SessionsWatch.m in Sources */,
 				4CBCB2C7180878EA008D4522 /* PFAlertViewController.m in Sources */,
 				4CD8E09E1938121600A4326C /* ResultTableViewCell.m in Sources */,
 				4C8A834E177B80B800022E03 /* ExhibitorsDetailViewController.m in Sources */,
@@ -3785,6 +3793,7 @@
 				4C088C5A177F667500CFBC96 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				4C088C5B177F667500CFBC96 /* NSEntityDescription+MagicalDataImport.m in Sources */,
 				4C088C5C177F667500CFBC96 /* NSNumber+MagicalDataImport.m in Sources */,
+				4C6E97C81C0503E8004B7F61 /* CscheduleWatch.m in Sources */,
 				4CA637E91BEA5A4B0068BA25 /* ConfSchedDetailTableViewController.m in Sources */,
 				4CC0ADED19E72BC600C42CCF /* ChatGallery.m in Sources */,
 				4C088C5D177F667500CFBC96 /* NSObject+MagicalDataImport.m in Sources */,
@@ -3918,6 +3927,7 @@
 				4C5875671BFA3912003EC2C8 /* ScheduleTableRow.m in Sources */,
 				4C5875521BFA2779003EC2C8 /* ExtensionDelegate.m in Sources */,
 				4C79D0CD1C02228D00AA6941 /* SessionDetailInterfaceController.m in Sources */,
+				4C73B3731C057617008A1E58 /* ErrorInterfaceController.m in Sources */,
 				4C5875641BFA28E3003EC2C8 /* CoreDataHelper.m in Sources */,
 				4C58756A1BFC204D003EC2C8 /* CscheduleWatch.m in Sources */,
 				4C210F5A1C036095005CFDB2 /* SessionDetailTableRow.m in Sources */,

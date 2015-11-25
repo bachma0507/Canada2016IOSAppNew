@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "SessionsWatch.h"
+#import "CscheduleWatch.h"
 
 @interface CoreDataHelper :NSObject
 
@@ -16,8 +18,19 @@
 @property (nonatomic, readonly) NSPersistentStoreCoordinator *coordinator;
 @property (nonatomic, readonly) NSPersistentStore            *store;
 
+@property (strong, nonatomic) NSArray *objectsSchedule;
+@property (strong, nonatomic) NSArray *objectsSession;
+
+@property (nonatomic, strong) NSMutableArray * json;
+
+@property (nonatomic, strong) NSMutableArray * cscheduleArray;
+
+@property (nonatomic, strong) NSMutableArray * sessionsArray;
+
 + (CoreDataHelper*)sharedHelper;
 
 - (void)setupCoreData;
 - (void)saveContext;
+- getResults: (NSArray *)myResults;
+
 @end
