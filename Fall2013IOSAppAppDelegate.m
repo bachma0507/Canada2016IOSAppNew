@@ -593,7 +593,7 @@ int iNotificationCounter=0;
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
             
-            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/exhibitorsW16.php"];
+            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/exhibitorsW16azure.php"];
             NSData * data = [NSData dataWithContentsOfURL:url];
             NSError * error;
             //added code 092715 to handle exception
@@ -1762,7 +1762,7 @@ int iNotificationCounter=0;
         #pragma mark - Create Sponsor Objects
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
             
-            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/sponsorsW16.php"];
+            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/sponsorsW16azure.php"];
             NSData * data = [NSData dataWithContentsOfURL:url];
             NSError * error;
             //added code 092715 to handle exception
@@ -1859,7 +1859,7 @@ int iNotificationCounter=0;
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
             
-            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/cscheduleW16.php"];
+            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/cscheduleW16azure.php"];
             NSData * data = [NSData dataWithContentsOfURL:url];
             NSError * error;
             //added code 092715 to handle exception
@@ -1957,7 +1957,7 @@ int iNotificationCounter=0;
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
             
-            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/ehscheduleW16.php"];
+            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/ehscheduleW16azure.php"];
             NSData * data = [NSData dataWithContentsOfURL:url];
             NSError * error;
             //added code 092715 to handle exception
