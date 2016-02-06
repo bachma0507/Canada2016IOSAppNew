@@ -12,5 +12,6 @@
 @interface SessionDetailTableRow : NSObject
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *sessionNameLabel;
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *sessionDescLabel;
+@property (strong, nonatomic) IBOutlet WKInterfaceLabel *locationLabel;
 
 @end

@@ -48,6 +48,8 @@
     
     sessionDetailRow.sessionNameLabel.text = [NSString stringWithFormat:@"%@",[item valueForKey:@"sessionName"]];
     sessionDetailRow.sessionDescLabel.text = [NSString stringWithFormat:@"%@",[item valueForKey:@"sessionDesc"]];
+    sessionDetailRow.locationLabel.text = [NSString stringWithFormat:@"%@",[item valueForKey:@"location"]];
+
     
     //NSString * name = [NSString stringWithFormat:@"%@",[self.objectsArray valueForKey:@"sessionName"]];
     //NSString * desc = [NSString stringWithFormat:@"%@",[self.objectsArray valueForKey:@"sessionDesc"]];
