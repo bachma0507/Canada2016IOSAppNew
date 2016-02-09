@@ -97,13 +97,13 @@ int iNotificationCounter=0;
     // Use this option to notifiy beta users of any updates
     
     
-    [Parse setApplicationId:@"jnsv9lO2crT74EbL2mdx17qn47e3dlyMtEVQ9E9s"
-                  clientKey:@"pLEmmQhpJ9g9A12KM97Q3n00f9KMpK8QITL8faI0"];
+    [Parse setApplicationId:@"hBYfmdNtJEjzBKMJYrE3rNrHmggbI8TeCJ3j1zj8"
+                  clientKey:@"g4V5YCaLfi0SDIB7LzcU0T4D9RJUhQ7loSc1Mzbt"];
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
    
-    [Crittercism enableWithAppID:@"5608ae1fd224ac0a00ed3e4a"];
+    [Crittercism enableWithAppID:@"56b90821b35f950b00e1ad73"];
     
     [PFFacebookUtils initializeFacebook];
     
@@ -593,7 +593,7 @@ int iNotificationCounter=0;
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
             
-            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/exhibitorsW16azure.php"];
+            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/exhibitorsC16.php"];
             NSData * data = [NSData dataWithContentsOfURL:url];
             NSError * error;
             //added code 092715 to handle exception
@@ -746,7 +746,7 @@ int iNotificationCounter=0;
             //NSHTTPURLResponse *response = nil;
             
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-CANADA-ON-0516"];
             
             //if ([response statusCode] >= 200 && [response statusCode] < 300){//BEGIN IF RESPONSE STATUSCODE
 
@@ -883,7 +883,7 @@ int iNotificationCounter=0;
             
             //NSHTTPURLResponse *response = nil;
             
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-CANADA-ON-0516"];
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
             
             //if ([response statusCode] >= 200 && [response statusCode] < 300){//BEGIN IF RESPONSE STATUSCODE
@@ -1005,7 +1005,7 @@ int iNotificationCounter=0;
             
             //NSHTTPURLResponse *response = nil;
             
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-CANADA-ON-0516"];
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
             
             //if ([response statusCode] >= 200 && [response statusCode] < 300){//BEGIN IF RESPONSE STATUSCODE
@@ -1127,7 +1127,7 @@ int iNotificationCounter=0;
             
             //NSHTTPURLResponse *response = nil;
             
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-CANADA-ON-0516"];
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
             
             //if ([response statusCode] >= 200 && [response statusCode] < 300){//BEGIN IF RESPONSE STATUSCODE
@@ -1249,7 +1249,7 @@ int iNotificationCounter=0;
             
             //NSHTTPURLResponse *response = nil;
             
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-CANADA-ON-0516"];
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
             
             //if ([response statusCode] >= 200 && [response statusCode] < 300){//BEGIN IF RESPONSE STATUSCODE
@@ -1370,7 +1370,7 @@ int iNotificationCounter=0;
             
             //NSHTTPURLResponse *response = nil;
             
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-CANADA-ON-0516"];
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
             
             //if ([response statusCode] >= 200 && [response statusCode] < 300){//BEGIN IF RESPONSE STATUSCODE
@@ -1498,7 +1498,7 @@ int iNotificationCounter=0;
             
             //NSURL *url = [NSURL URLWithString:@"http://www.speedyreference.com/bicsi/convertcsv1.json"];
             
-            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
+            NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-CANADA-ON-0516"];
             
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/testtrunc3.json"];
             //NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/bicsi/test.json"];
@@ -1762,7 +1762,7 @@ int iNotificationCounter=0;
         #pragma mark - Create Sponsor Objects
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
             
-            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/sponsorsW16azure.php"];
+            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/sponsorsC16.php"];
             NSData * data = [NSData dataWithContentsOfURL:url];
             NSError * error;
             //added code 092715 to handle exception
@@ -1859,7 +1859,7 @@ int iNotificationCounter=0;
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
             
-            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/cscheduleW16azure.php"];
+            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/cscheduleC16.php"];
             NSData * data = [NSData dataWithContentsOfURL:url];
             NSError * error;
             //added code 092715 to handle exception
@@ -1957,7 +1957,7 @@ int iNotificationCounter=0;
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
             
-            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/ehscheduleW16azure.php"];
+            NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/ehscheduleC16.php"];
             NSData * data = [NSData dataWithContentsOfURL:url];
             NSError * error;
             //added code 092715 to handle exception

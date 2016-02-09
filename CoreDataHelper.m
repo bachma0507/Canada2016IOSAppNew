@@ -199,7 +199,7 @@ NSString *storeFilename = @"group.org.bicsi.canada2016appnew";
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
         
-        NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/cscheduleW16.php"];
+        NSURL *url = [NSURL URLWithString:@"https://speedyreference.com/cscheduleC16.php"];
         NSData * data = [NSData dataWithContentsOfURL:url];
         NSError * error;
         //added code 092715 to handle exception
@@ -341,7 +341,7 @@ NSString *storeFilename = @"group.org.bicsi.canada2016appnew";
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),^{
         
         
-        NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-WINTER-FL-0116"];
+        NSURL *url = [NSURL URLWithString:@"https://webservice.bicsi.org/json/reply/MobSession?SessionAltCd=CN-CANADA-ON-0516"];
         
         
         
