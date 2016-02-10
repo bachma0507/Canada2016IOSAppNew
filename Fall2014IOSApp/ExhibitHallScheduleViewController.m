@@ -78,6 +78,11 @@
     
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 -(void)refreshTable{
     
     

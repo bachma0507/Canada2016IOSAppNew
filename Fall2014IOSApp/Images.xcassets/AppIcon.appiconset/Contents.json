@@ -102,6 +102,12 @@
       "idiom" : "ipad",
       "filename" : "ipadC16ios7_152x152@2x.png",
       "scale" : "2x"
+    },
+    {
+      "size" : "83.5x83.5",
+      "idiom" : "ipad",
+      "filename" : "C16_app_icon_store_167x167.png",
+      "scale" : "2x"
     }
   ],
   "info" : {
