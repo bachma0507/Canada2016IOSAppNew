@@ -59,10 +59,10 @@ extern int iNotificationCounter;
     self.navigationController.navigationBar.translucent = YES;
     self.navigationController.view.backgroundColor = [UIColor clearColor];
     
-    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"green"]];
-    [tempImageView setFrame:self.tableView.frame];
-    
-    self.tableView.backgroundView = tempImageView;
+//    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"green"]];
+//    [tempImageView setFrame:self.tableView.frame];
+//    
+//    self.tableView.backgroundView = tempImageView;
     
     
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"objectIDArray"]){
@@ -99,6 +99,12 @@ extern int iNotificationCounter;
     
     
 }
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 
 - (void)didReceiveMemoryWarning
 {

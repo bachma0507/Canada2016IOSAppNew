@@ -204,11 +204,11 @@
     
     cell.textLabel.font = [UIFont fontWithName:@"Arial-Bold" size:15.0];
     //cell.textLabel.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
-    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
     cell.detailTextLabel.font = [UIFont fontWithName:@"Arial" size:13.0];
-    cell.detailTextLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.textColor = [UIColor blackColor];
     
-    cell.backgroundColor = [UIColor colorWithRed:32/255.0 green:115/255.0 blue:169/255.0 alpha:1.0];
+    //cell.backgroundColor = [UIColor colorWithRed:32/255.0 green:115/255.0 blue:169/255.0 alpha:1.0];
     
     // Configure the cell...
     
@@ -228,17 +228,17 @@
     }
 }
 
-//- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
-//{
-//    
-//    if(indexPath.row % 2 == 0){
-//        UIColor *altCellColor = [UIColor colorWithRed:32/255.0 green:115/255.0 blue:169/255.0 alpha:1.0];
-//        cell.backgroundColor = altCellColor;
-//    }
-//    else{
-//        cell.backgroundColor = [UIColor colorWithRed:138/255.0 green:205/255.0 blue:221/255.0 alpha:1.0];;
-//    }
-//}
+- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
+{
+    
+    if(indexPath.row % 2 == 0){
+        UIColor *altCellColor = [UIColor colorWithRed:246/255.0 green:246/255.0 blue:246/255.0 alpha:1.0];
+        cell.backgroundColor = altCellColor;
+    }
+    else{
+        cell.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1.0];;
+    }
+}
 
 
 /*

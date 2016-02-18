@@ -66,6 +66,12 @@
     //speakerWebsite.text = speakers.speakerWebsite;
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

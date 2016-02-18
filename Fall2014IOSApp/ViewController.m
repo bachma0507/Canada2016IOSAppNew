@@ -42,6 +42,11 @@ const unsigned char SpeechKitApplicationKey[] = {0xfd, 0x41, 0x2f, 0x14, 0x90, 0
     self.searchTextField.returnKeyType = UIReturnKeySearch;
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

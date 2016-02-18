@@ -69,6 +69,11 @@
     
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];

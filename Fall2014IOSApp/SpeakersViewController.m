@@ -173,11 +173,11 @@
             //speakers = [speakersArray objectAtIndex:indexPath.row];
             cell.textLabel.text = fullName;
             //cell.textLabel.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
-            cell.textLabel.textColor = [UIColor blackColor];
+            cell.textLabel.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
             cell.detailTextLabel.text = [object valueForKey:@"speakerCompany"];
            //cell.detailTextLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
             //cell.textLabel.font = [UIFont fontWithName:@"Arial-Bold" size:14.0];
-            cell.detailTextLabel.textColor = [UIColor grayColor];
+            cell.detailTextLabel.textColor = [UIColor blackColor];
     }
         else
         {
@@ -189,11 +189,11 @@
             //speakers = [speakersArray objectAtIndex:indexPath.row];
             cell.textLabel.text = fullName;
             //cell.textLabel.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
-            cell.textLabel.textColor = [UIColor blackColor];
+            cell.textLabel.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
             cell.detailTextLabel.text = [object valueForKey:@"speakerCompany"];
             //cell.detailTextLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
             //cell.textLabel.font = [UIFont fontWithName:@"Arial-Bold" size:14.0];
-            cell.textLabel.textColor = [UIColor grayColor];
+            cell.detailTextLabel.textColor = [UIColor blackColor];
         }
         
     
@@ -201,17 +201,17 @@
 
 }
 
-//- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
-//{
-//    
-//    if(indexPath.row % 2 == 0){
-//        UIColor *altCellColor = [UIColor colorWithRed:246/255.0 green:235/255.0 blue:253/255.0 alpha:1.0];
-//        cell.backgroundColor = altCellColor;
-//    }
-//    else{
-//        cell.backgroundColor = [UIColor whiteColor];
-//    }
-//}
+- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
+{
+    
+    if(indexPath.row % 2 == 0){
+        UIColor *altCellColor = [UIColor colorWithRed:246/255.0 green:246/255.0 blue:246/255.0 alpha:1.0];
+        cell.backgroundColor = altCellColor;
+    }
+    else{
+        cell.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1.0];;
+    }
+}
 
 -(void)refreshTable{
     

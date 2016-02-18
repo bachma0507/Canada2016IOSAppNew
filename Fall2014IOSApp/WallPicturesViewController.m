@@ -77,6 +77,12 @@
     [actvity startAnimating];
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];

@@ -34,6 +34,12 @@
     _commentTextField.delegate = self;
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];

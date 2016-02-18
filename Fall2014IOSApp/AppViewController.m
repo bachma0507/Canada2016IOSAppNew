@@ -40,12 +40,19 @@
     
     
     //NSString *httpSource = @"https://speedyreference.com/bicsi2.html";
-    NSString *httpSource = @"http://www.bicsi.org/m/Login_App.aspx";
+    //NSString *httpSource = @"http://www.bicsi.org/m/Login_App.aspx";
+    NSString *httpSource = @"http://www.bicsi.org/m/mybicsi_app.aspx";
     NSURL *fullUrl = [NSURL URLWithString:httpSource];
     NSURLRequest *httpRequest = [NSURLRequest requestWithURL:fullUrl];
     [webView loadRequest:httpRequest];
     
 }
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 
 
 - (void)didReceiveMemoryWarning

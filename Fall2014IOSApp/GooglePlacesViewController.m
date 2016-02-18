@@ -53,6 +53,11 @@
     
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 -(void) queryGooglePlaces: (NSString *) googleType
 {
     

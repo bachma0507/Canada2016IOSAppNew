@@ -76,6 +76,11 @@
 //    }
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -134,7 +139,7 @@
         
         if (user != nil)
         {
-            if (user[PF_USER_FACEBOOKID] == nil)
+            if (user[PF_USER_FACEBOOKID] == NULL)
             {
                 [self requestFacebook:user];
             }

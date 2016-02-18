@@ -68,6 +68,12 @@
     //	[self.navigationController pushViewController:webViewController animated:YES];
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
