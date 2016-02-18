@@ -62,10 +62,10 @@
     UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButtonItem;
     
-    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"green"]];
-    [tempImageView setFrame:self.myTableView.frame];
-    
-    self.myTableView.backgroundView = tempImageView;
+//    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"green"]];
+//    [tempImageView setFrame:self.myTableView.frame];
+//    
+//    self.myTableView.backgroundView = tempImageView;
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc]
                                         init];
@@ -76,6 +76,11 @@
     
     [self refreshTable];
     
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 
@@ -175,17 +180,17 @@
     }
 }
 
-- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
-{
-    
-    if(indexPath.row % 2 == 0){
-        UIColor *altCellColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
-        cell.backgroundColor = altCellColor;
-    }
-    else{
-        cell.backgroundColor = [UIColor colorWithRed:116/255.0 green:165/255.0 blue:168/255.0 alpha:1.0];;
-    }
-}
+//- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
+//{
+//    
+//    if(indexPath.row % 2 == 0){
+//        UIColor *altCellColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
+//        cell.backgroundColor = altCellColor;
+//    }
+//    else{
+//        cell.backgroundColor = [UIColor colorWithRed:116/255.0 green:165/255.0 blue:168/255.0 alpha:1.0];;
+//    }
+//}
 
 
 - (void)didReceiveMemoryWarning
@@ -276,7 +281,9 @@
     
     SessionsMainViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    cell.backgroundColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
+    //cell.backgroundColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
+    //cell.backgroundColor = [UIColor colorWithRed:32/255.0 green:115/255.0 blue:169/255.0 alpha:1.0];
+    cell.backgroundColor = [UIColor whiteColor];
     
     if (!cell)
     {
@@ -363,7 +370,7 @@
         
         NSString *sessionTime = [[NSString alloc] initWithFormat:@"%@ - %@", stringStartTime,stringEndTime];
         cell.detailTextLabel.text = sessionTime;
-        cell.detailTextLabel.textColor = [UIColor whiteColor];
+        cell.detailTextLabel.textColor = [UIColor blackColor];
         
         cell.textLabel.numberOfLines = 0;
         cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -422,7 +429,7 @@
         cell.detailTextLabel.text = sessionTime;
         //cell.detailTextLabel.font = [UIFont fontWithName:@"Arial" size:11.0];
         //cell.textLabel.font = [UIFont fontWithName:@"Arial-Bold" size:10.0];
-        cell.detailTextLabel.textColor = [UIColor whiteColor];
+        cell.detailTextLabel.textColor = [UIColor blackColor];
         //cell.textLabel.font = [UIFont systemFontOfSize:13.0];
         //cell.textLabel.textColor = [UIColor brownColor];
         

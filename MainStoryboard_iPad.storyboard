@@ -252,7 +252,7 @@
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="uO4-eV-TGK" detailTextLabel="Npe-ZW-3Uy" rowHeight="94" style="IBUITableViewCellStyleSubtitle" id="wmT-oD-f1k" customClass="SessionsMainViewCell">
-                                        <rect key="frame" x="0.0" y="66" width="768" height="94"/>
+                                        <rect key="frame" x="0.0" y="130" width="768" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wmT-oD-f1k" id="Edu-YO-b8F">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="93"/>
@@ -529,7 +529,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1Y-zs-rqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="-1610"/>
+            <point key="canvasLocation" x="511" y="-1330"/>
         </scene>
         <!--Surveys View Controller-->
         <scene sceneID="y3m-cx-B9J">
@@ -979,7 +979,7 @@
                         <color key="separatorColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SponsorCell" rowHeight="64" id="wuh-iN-RNY" customClass="SponsorsViewCell">
-                                <rect key="frame" x="0.0" y="22" width="768" height="64"/>
+                                <rect key="frame" x="0.0" y="86" width="768" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wuh-iN-RNY" id="mVi-a8-Tzg">
                                     <rect key="frame" x="0.0" y="0.0" width="682" height="63"/>
@@ -1111,7 +1111,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ExhibitHallCell" rowHeight="64" id="wXu-RY-2xt" customClass="ExhibitHallScheduleCell">
-                                <rect key="frame" x="0.0" y="22" width="768" height="64"/>
+                                <rect key="frame" x="0.0" y="86" width="768" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wXu-RY-2xt" id="I9A-B4-V54">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="64"/>
@@ -1528,7 +1528,7 @@
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="ye7-c7-2Eg" detailTextLabel="gXv-91-vyW" style="IBUITableViewCellStyleSubtitle" id="SAY-q8-5qI">
-                                        <rect key="frame" x="0.0" y="66" width="768" height="44"/>
+                                        <rect key="frame" x="0.0" y="130" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SAY-q8-5qI" id="7MI-bb-LPd">
                                             <rect key="frame" x="0.0" y="0.0" width="682" height="43"/>
@@ -2252,7 +2252,7 @@
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ExhibitorsCell" textLabel="bl2-zb-Bc8" detailTextLabel="B1b-bH-Oem" rowHeight="74" style="IBUITableViewCellStyleSubtitle" id="oTq-Hi-hgL" customClass="ExhibitorViewCell">
-                                        <rect key="frame" x="0.0" y="66" width="768" height="74"/>
+                                        <rect key="frame" x="0.0" y="130" width="768" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oTq-Hi-hgL" id="fxJ-0U-8Ac">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="73"/>
@@ -2463,7 +2463,7 @@
                                 <color key="separatorColor" red="1" green="0.74901960779999999" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="MZ2-iO-lAN" detailTextLabel="q31-sd-LNf" rowHeight="54" style="IBUITableViewCellStyleSubtitle" id="0Ha-W1-Xpn">
-                                        <rect key="frame" x="0.0" y="50" width="768" height="54"/>
+                                        <rect key="frame" x="0.0" y="114" width="768" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Ha-W1-Xpn" id="JRW-Po-AyD">
                                             <rect key="frame" x="0.0" y="0.0" width="682" height="53"/>

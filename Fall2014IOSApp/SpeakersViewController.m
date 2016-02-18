@@ -62,10 +62,10 @@
     self.navigationItem.backBarButtonItem = backButtonItem;
     
     
-    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"green"]];
-    [tempImageView setFrame:self.myTableView.frame];
-    
-    self.myTableView.backgroundView = tempImageView;
+//    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"green"]];
+//    [tempImageView setFrame:self.myTableView.frame];
+//    
+//    self.myTableView.backgroundView = tempImageView;
     
 //    HUD = [[MBProgressHUD alloc] initWithView:self.view];
 //    HUD.labelText = @"Loading data...";
@@ -87,6 +87,11 @@
     
     
     //[self retrieveData];
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 
@@ -149,7 +154,8 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
-    cell.backgroundColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
+    //cell.backgroundColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
+    cell.backgroundColor = [UIColor whiteColor];
     
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:simpleTableIdentifier];
@@ -166,11 +172,12 @@
             NSString * fullName = [[NSString alloc] initWithFormat:@"%@ %@", firstName, lastName];
             //speakers = [speakersArray objectAtIndex:indexPath.row];
             cell.textLabel.text = fullName;
-            cell.textLabel.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
+            //cell.textLabel.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
+            cell.textLabel.textColor = [UIColor blackColor];
             cell.detailTextLabel.text = [object valueForKey:@"speakerCompany"];
            //cell.detailTextLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
             //cell.textLabel.font = [UIFont fontWithName:@"Arial-Bold" size:14.0];
-            cell.detailTextLabel.textColor = [UIColor whiteColor];
+            cell.detailTextLabel.textColor = [UIColor grayColor];
     }
         else
         {
@@ -181,11 +188,12 @@
             NSString * fullName = [[NSString alloc] initWithFormat:@"%@ %@", firstName, lastName];
             //speakers = [speakersArray objectAtIndex:indexPath.row];
             cell.textLabel.text = fullName;
-            cell.textLabel.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
+            //cell.textLabel.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
+            cell.textLabel.textColor = [UIColor blackColor];
             cell.detailTextLabel.text = [object valueForKey:@"speakerCompany"];
             //cell.detailTextLabel.font = [UIFont fontWithName:@"Arial" size:10.0];
             //cell.textLabel.font = [UIFont fontWithName:@"Arial-Bold" size:14.0];
-            cell.textLabel.textColor = [UIColor whiteColor];
+            cell.textLabel.textColor = [UIColor grayColor];
         }
         
     
@@ -243,17 +251,17 @@
     }
 }
 
-- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
-{
-    
-    if(indexPath.row % 2 == 0){
-        UIColor *altCellColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
-        cell.backgroundColor = altCellColor;
-    }
-    else{
-        cell.backgroundColor = [UIColor colorWithRed:116/255.0 green:165/255.0 blue:168/255.0 alpha:1.0];;
-    }
-}
+//- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
+//{
+//    
+//    if(indexPath.row % 2 == 0){
+//        UIColor *altCellColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
+//        cell.backgroundColor = altCellColor;
+//    }
+//    else{
+//        cell.backgroundColor = [UIColor colorWithRed:116/255.0 green:165/255.0 blue:168/255.0 alpha:1.0];;
+//    }
+//}
 
 //-(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
 //    

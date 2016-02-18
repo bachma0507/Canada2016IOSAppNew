@@ -62,10 +62,10 @@
     UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButtonItem;
     
-    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"green"]];
-    [tempImageView setFrame:self.tableView.frame];
-    
-    self.tableView.backgroundView = tempImageView;
+//    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"green"]];
+//    [tempImageView setFrame:self.tableView.frame];
+//    
+//    self.tableView.backgroundView = tempImageView;
     
 //        HUD = [[MBProgressHUD alloc] initWithView:self.view];
 //        HUD.labelText = @"Loading data...";
@@ -98,6 +98,11 @@
     [self refreshTable];
 
     
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 //- (void)waitForTwoSeconds {
@@ -150,17 +155,17 @@
     }
 }
 
-- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
-{
-    
-    if(indexPath.row % 2 == 0){
-        UIColor *altCellColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
-        cell.backgroundColor = altCellColor;
-    }
-    else{
-        cell.backgroundColor = [UIColor colorWithRed:116/255.0 green:165/255.0 blue:168/255.0 alpha:1.0];;
-    }
-}
+//- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
+//{
+//    
+//    if(indexPath.row % 2 == 0){
+//        UIColor *altCellColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
+//        cell.backgroundColor = altCellColor;
+//    }
+//    else{
+//        cell.backgroundColor = [UIColor colorWithRed:116/255.0 green:165/255.0 blue:168/255.0 alpha:1.0];;
+//    }
+//}
 
 
 #pragma mark - Table view data source
@@ -186,7 +191,8 @@
     
     SponsorsViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    cell.backgroundColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
+    //cell.backgroundColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
+    cell.backgroundColor = [UIColor whiteColor];
     
     if (cell == nil) {
         cell = [[SponsorsViewCell alloc]
@@ -207,13 +213,15 @@
     cell.sponsorName.text = [object valueForKey:@"sponsorName"];
     cell.sponsorName.font = [UIFont fontWithName:@"Arial" size:13.0];
     cell.sponsorName.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
+    //cell.sponsorName.textColor = [UIColor blackColor];
     
     cell.sponsorLevel.text = [object valueForKey:@"sponsorLevel"];
     cell.sponsorLevel.font = [UIFont fontWithName:@"Arial" size:12.0];
-    cell.sponsorLevel.textColor = [UIColor whiteColor];
+    cell.sponsorLevel.textColor = [UIColor blackColor];
     
     cell.sponsorSpecial.text = [object valueForKey:@"sponsorSpecial"];
     cell.sponsorSpecial.font = [UIFont fontWithName:@"Arial" size:8.0];
+    cell.sponsorSpecial.textColor = [UIColor brownColor];
     
     cell.boothNumber.text = [object valueForKey:@"boothNumber"];
     cell.boothNumber.font = [UIFont fontWithName:@"Arial" size:11.0];

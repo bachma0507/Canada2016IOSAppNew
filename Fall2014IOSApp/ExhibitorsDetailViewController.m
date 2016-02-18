@@ -108,6 +108,11 @@
     
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
     [activity startAnimating];

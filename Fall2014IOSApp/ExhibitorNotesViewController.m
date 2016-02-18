@@ -86,6 +86,11 @@
     [notesTextField setClipsToBounds: YES];
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 //}
 
 - (void)didReceiveMemoryWarning

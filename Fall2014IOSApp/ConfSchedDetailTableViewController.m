@@ -51,10 +51,10 @@
     UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithTitle:@" " style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButtonItem;
     
-    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"green"]];
-    [tempImageView setFrame:self.tableView.frame];
-    
-    self.tableView.backgroundView = tempImageView;
+//    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"green"]];
+//    [tempImageView setFrame:self.tableView.frame];
+//    
+//    self.tableView.backgroundView = tempImageView;
     
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc]
@@ -69,6 +69,11 @@
     [self refreshTable];
     
     
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -108,7 +113,8 @@
     
     confSchedDetailViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
-    cell.backgroundColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
+    //cell.backgroundColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
+    cell.backgroundColor = [UIColor whiteColor];
     
     if (!cell)
     {
@@ -135,6 +141,7 @@
     }
     else{
         
+        //cell.sessionName.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
         cell.sessionName.textColor = [UIColor colorWithRed:30/255.0 green:37/255.0 blue:89/255.0 alpha:1.0];
         
         UIImage * myImage2 = [UIImage imageNamed:@"transparent.png"];
@@ -159,7 +166,7 @@
     NSString * sessionTime = [[NSString alloc] initWithFormat:@"%@ - %@", [NSDate stringFromTime:sTime], [NSDate stringFromTime:eTime]];
     
     cell.sessionTime.text = sessionTime;
-    cell.sessionTime.textColor = [UIColor whiteColor];
+    cell.sessionTime.textColor = [UIColor blackColor];
     cell.itscecs.hidden = YES;
     cell.sessionStatus.hidden = YES;
     //}
@@ -237,17 +244,17 @@
 }
 
 
-- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
-{
-    
-    if(indexPath.row % 2 == 0){
-        UIColor *altCellColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
-        cell.backgroundColor = altCellColor;
-    }
-    else{
-        cell.backgroundColor = [UIColor colorWithRed:116/255.0 green:165/255.0 blue:168/255.0 alpha:1.0];;
-    }
-}
+//- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath
+//{
+//    
+//    if(indexPath.row % 2 == 0){
+//        UIColor *altCellColor = [UIColor colorWithRed:32/255.0 green:115/255.0 blue:169/255.0 alpha:1.0];
+//        cell.backgroundColor = altCellColor;
+//    }
+//    else{
+//        cell.backgroundColor = [UIColor colorWithRed:138/255.0 green:205/255.0 blue:221/255.0 alpha:1.0];;
+//    }
+//}
 
 - (void)viewDidAppear:(BOOL)animated
 {
