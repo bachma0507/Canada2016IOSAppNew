@@ -60,6 +60,7 @@
 		4C17369B183519BD00B1D2E5 /* committee.html in Resources */ = {isa = PBXBuildFile; fileRef = 4C17369A183519BD00B1D2E5 /* committee.html */; };
 		4C1B9B1817A2269000267303 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1B9B1717A2269000267303 /* CoreTelephony.framework */; };
 		4C1B9B1A17A226AC00267303 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1B9B1917A226AC00267303 /* libz.dylib */; };
+		4C1D50DA1C84C84E00455706 /* ComMeetingsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D50D91C84C84E00455706 /* ComMeetingsViewCell.m */; };
 		4C1F7B321777872800BC66B3 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F7B311777872800BC66B3 /* ContactUsViewController.m */; };
 		4C1F7B3517778A5C00BC66B3 /* CECInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F7B3417778A5C00BC66B3 /* CECInfoViewController.m */; };
 		4C1FC0FA176112FF00C1C09B /* iphone_ipod_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FC0F9176112FF00C1C09B /* iphone_ipod_57x57.png */; };
@@ -733,6 +734,8 @@
 		4C17369A183519BD00B1D2E5 /* committee.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = committee.html; sourceTree = "<group>"; };
 		4C1B9B1717A2269000267303 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		4C1B9B1917A226AC00267303 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4C1D50D81C84C84E00455706 /* ComMeetingsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComMeetingsViewCell.h; sourceTree = "<group>"; };
+		4C1D50D91C84C84E00455706 /* ComMeetingsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComMeetingsViewCell.m; sourceTree = "<group>"; };
 		4C1F7B301777872800BC66B3 /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
 		4C1F7B311777872800BC66B3 /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
 		4C1F7B3317778A5C00BC66B3 /* CECInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CECInfoViewController.h; sourceTree = "<group>"; };
@@ -2991,6 +2994,8 @@
 			children = (
 				4C894E3818AFE6E400001623 /* ComMeetingsMainViewController.h */,
 				4C894E3918AFE6E400001623 /* ComMeetingsMainViewController.m */,
+				4C1D50D81C84C84E00455706 /* ComMeetingsViewCell.h */,
+				4C1D50D91C84C84E00455706 /* ComMeetingsViewCell.m */,
 			);
 			name = CommitteeMeetings;
 			sourceTree = "<group>";
@@ -3755,6 +3760,7 @@
 				4C326EBB19634139006D4B76 /* YelpAPIServiceShop.m in Sources */,
 				4C9B1E2019E34387007E0F51 /* JSQMessage.m in Sources */,
 				4CC5646618CC36B80033B05A /* FloorMapsViewController.m in Sources */,
+				4C1D50DA1C84C84E00455706 /* ComMeetingsViewCell.m in Sources */,
 				4C9B1E1F19E34387007E0F51 /* JSQMessagesCollectionViewLayoutAttributes.m in Sources */,
 				4CD8E0801937E42F00A4326C /* OADataFetcher.m in Sources */,
 				4CACEAC21776B5D400E90BD8 /* MBProgressHUD.m in Sources */,

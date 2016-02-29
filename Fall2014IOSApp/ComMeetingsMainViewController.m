@@ -13,6 +13,7 @@
 #import <CoreData/CoreData.h>
 #import "StartPageViewController.h"
 #import "SVWebViewController.h"
+#import "ComMeetingsViewCell.h"
 
 @interface ComMeetingsMainViewController ()
 
@@ -25,6 +26,7 @@
 @synthesize objects;
 @synthesize tempDict;
 @synthesize dateArray;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -168,14 +170,15 @@
 {
     static NSString *simpleTableIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+     ComMeetingsViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     //cell.backgroundColor = [UIColor colorWithRed:130/255.0 green:171/255.0 blue:50/255.0 alpha:1.0];
     cell.backgroundColor = [UIColor whiteColor];
     
     if (!cell)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:simpleTableIdentifier];
+        cell = [[ComMeetingsViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:simpleTableIdentifier];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
@@ -186,6 +189,11 @@
         
         NSManagedObject *object = [dateSection objectAtIndex:indexPath.row];
         cell.textLabel.text = [object valueForKey:@"sessionName"];
+        cell.location.text = [object valueForKey:@"location"];
+        cell.location.textColor = [UIColor blueColor];
+        
+        
+    
         
         NSString * planner = [NSString stringWithFormat:@"%@", [object valueForKey:@"planner"]];
         
@@ -233,6 +241,7 @@
         //cell.textLabel.font = [UIFont systemFontOfSize:11.0];
         //cell.textLabel.textColor = [UIColor brownColor];
         
+        
         cell.textLabel.numberOfLines = 0;
         cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
         
@@ -241,6 +250,8 @@
     {
         NSManagedObject *object = [self.results objectAtIndex:indexPath.row];
         cell.textLabel.text = [object valueForKey:@"sessionName"];
+        cell.location.text = [object valueForKey:@"location"];
+        cell.location.textColor = [UIColor blueColor];
         
         NSString * planner = [NSString stringWithFormat:@"%@", [object valueForKey:@"planner"]];
         

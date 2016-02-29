@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Sessions.h"
 #import "SessionsViewController.h"
+
 @class MBProgressHUD;
 
 @class ComMeetingsMainViewController;
@@ -33,5 +34,6 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *myTableView;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
+
 
 @end
