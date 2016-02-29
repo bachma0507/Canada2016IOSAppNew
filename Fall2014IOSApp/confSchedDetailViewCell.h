@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *sessionName;
 @property (nonatomic, strong) IBOutlet UILabel *sessionTime;
-@property (nonatomic, strong) IBOutlet UILabel *sessionStatus;
+@property (strong, nonatomic) IBOutlet UILabel *sessionLocation;
 @property (nonatomic, strong) IBOutlet UILabel *itscecs;
 @property (strong, nonatomic) IBOutlet UIImageView *starUnSel;
 

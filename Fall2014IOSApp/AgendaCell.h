@@ -13,6 +13,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *sessionDateLabel;
 @property (nonatomic, strong) IBOutlet UILabel *sessionNameLabel;
 @property (nonatomic, strong) IBOutlet UILabel *sessionTimeLabel;
+@property (strong, nonatomic) IBOutlet UILabel *location;
 
 
 @end

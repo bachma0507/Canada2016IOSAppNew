@@ -123,6 +123,8 @@
     
     cell.sessionNameLabel.text = [object valueForKey:@"sessionname"];
     cell.sessionNameLabel.textColor = [UIColor redColor];
+    cell.location.text = [object valueForKey:@"location"];
+    cell.location.textColor = [UIColor blueColor];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];

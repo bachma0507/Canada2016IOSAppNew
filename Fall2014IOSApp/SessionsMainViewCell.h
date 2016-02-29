@@ -10,5 +10,6 @@
 
 @interface SessionsMainViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *starUnSel;
+@property (strong, nonatomic) IBOutlet UILabel *location;
 
 @end

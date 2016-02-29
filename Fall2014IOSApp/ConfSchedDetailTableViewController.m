@@ -127,6 +127,7 @@
     
     NSManagedObject *object = [self.myObjects objectAtIndex:indexPath.row];
     cell.sessionName.text = [object valueForKey:@"sessionName"];
+    cell.sessionLocation.text = [object valueForKey:@"location"];
     
     NSString * planner = [NSString stringWithFormat:@"%@", [object valueForKey:@"planner"]];
     
@@ -167,8 +168,9 @@
     
     cell.sessionTime.text = sessionTime;
     cell.sessionTime.textColor = [UIColor blackColor];
+    cell.sessionLocation.textColor = [UIColor blueColor];
     cell.itscecs.hidden = YES;
-    cell.sessionStatus.hidden = YES;
+    //cell.sessionStatus.hidden = YES;
     //}
     //cell.sessionStatus.text = [object valueForKey:@"sessionStatus"];
     

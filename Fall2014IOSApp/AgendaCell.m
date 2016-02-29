@@ -9,7 +9,7 @@
 #import "AgendaCell.h"
 
 @implementation AgendaCell
-@synthesize sessionTimeLabel, sessionDateLabel, sessionNameLabel;
+@synthesize sessionTimeLabel, sessionDateLabel, sessionNameLabel, location;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
