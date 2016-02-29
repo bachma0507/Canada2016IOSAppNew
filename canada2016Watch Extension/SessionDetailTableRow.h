@@ -13,5 +13,6 @@
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *sessionNameLabel;
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *sessionDescLabel;
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *locationLabel;
+@property (strong, nonatomic) IBOutlet WKInterfaceLabel *start;
 
 @end

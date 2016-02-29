@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *start;
 
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *end;
+@property (strong, nonatomic) IBOutlet WKInterfaceLabel *location;
 
 
 @end

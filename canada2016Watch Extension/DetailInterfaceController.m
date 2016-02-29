@@ -75,6 +75,7 @@
         
         NSManagedObject *item = myResults[i];
         detailRow.session.text = [NSString stringWithFormat:@"%@",[item valueForKey:@"sessionName"]];
+        detailRow.location.text = [NSString stringWithFormat:@"%@",[item valueForKey:@"location"]];
         
         NSDate * sTime = [item valueForKey:@"startTime"];
         NSDate * eTime = [item valueForKey:@"endTime"];

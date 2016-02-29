@@ -49,6 +49,23 @@
     sessionDetailRow.sessionNameLabel.text = [NSString stringWithFormat:@"%@",[item valueForKey:@"sessionName"]];
     sessionDetailRow.sessionDescLabel.text = [NSString stringWithFormat:@"%@",[item valueForKey:@"sessionDesc"]];
     sessionDetailRow.locationLabel.text = [NSString stringWithFormat:@"%@",[item valueForKey:@"location"]];
+        
+    NSDate * sTime = [item valueForKey:@"startTime"];
+        
+    // set the formatter like this
+    NSDateFormatter *sdf = [[NSDateFormatter alloc] init];
+    [sdf setDateStyle:NSDateFormatterNoStyle];
+    [sdf setTimeStyle:NSDateFormatterShortStyle];
+        
+    // set the formatter like this
+    NSDateFormatter *edf = [[NSDateFormatter alloc] init];
+    [edf setDateStyle:NSDateFormatterNoStyle];
+    [edf setTimeStyle:NSDateFormatterShortStyle];
+        
+        
+    NSString * startTime = [sdf stringFromDate:sTime];
+    
+    sessionDetailRow.start.text = startTime;
 
     
     //NSString * name = [NSString stringWithFormat:@"%@",[self.objectsArray valueForKey:@"sessionName"]];
