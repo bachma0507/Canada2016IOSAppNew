@@ -61,6 +61,8 @@
 		4C1B9B1817A2269000267303 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1B9B1717A2269000267303 /* CoreTelephony.framework */; };
 		4C1B9B1A17A226AC00267303 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1B9B1917A226AC00267303 /* libz.dylib */; };
 		4C1D50DA1C84C84E00455706 /* ComMeetingsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D50D91C84C84E00455706 /* ComMeetingsViewCell.m */; };
+		4C1D50DD1C84EC0C00455706 /* MyScheduleInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D50DC1C84EC0C00455706 /* MyScheduleInterfaceController.m */; };
+		4C1D50E01C861B7500455706 /* MyScheduleTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1D50DF1C861B7500455706 /* MyScheduleTableRow.m */; };
 		4C1F7B321777872800BC66B3 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F7B311777872800BC66B3 /* ContactUsViewController.m */; };
 		4C1F7B3517778A5C00BC66B3 /* CECInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F7B3417778A5C00BC66B3 /* CECInfoViewController.m */; };
 		4C1FC0FA176112FF00C1C09B /* iphone_ipod_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FC0F9176112FF00C1C09B /* iphone_ipod_57x57.png */; };
@@ -736,6 +738,10 @@
 		4C1B9B1917A226AC00267303 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4C1D50D81C84C84E00455706 /* ComMeetingsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComMeetingsViewCell.h; sourceTree = "<group>"; };
 		4C1D50D91C84C84E00455706 /* ComMeetingsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComMeetingsViewCell.m; sourceTree = "<group>"; };
+		4C1D50DB1C84EC0C00455706 /* MyScheduleInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScheduleInterfaceController.h; sourceTree = "<group>"; };
+		4C1D50DC1C84EC0C00455706 /* MyScheduleInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScheduleInterfaceController.m; sourceTree = "<group>"; };
+		4C1D50DE1C861B7500455706 /* MyScheduleTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScheduleTableRow.h; sourceTree = "<group>"; };
+		4C1D50DF1C861B7500455706 /* MyScheduleTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScheduleTableRow.m; sourceTree = "<group>"; };
 		4C1F7B301777872800BC66B3 /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
 		4C1F7B311777872800BC66B3 /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
 		4C1F7B3317778A5C00BC66B3 /* CECInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CECInfoViewController.h; sourceTree = "<group>"; };
@@ -2134,6 +2140,10 @@
 				4C210F591C036095005CFDB2 /* SessionDetailTableRow.m */,
 				4C73B3711C057617008A1E58 /* ErrorInterfaceController.h */,
 				4C73B3721C057617008A1E58 /* ErrorInterfaceController.m */,
+				4C1D50DB1C84EC0C00455706 /* MyScheduleInterfaceController.h */,
+				4C1D50DC1C84EC0C00455706 /* MyScheduleInterfaceController.m */,
+				4C1D50DE1C861B7500455706 /* MyScheduleTableRow.h */,
+				4C1D50DF1C861B7500455706 /* MyScheduleTableRow.m */,
 			);
 			path = "canada2016Watch Extension";
 			sourceTree = "<group>";
@@ -3929,8 +3939,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1D50E01C861B7500455706 /* MyScheduleTableRow.m in Sources */,
 				4C5875631BFA2894003EC2C8 /* bicsi.xcdatamodeld in Sources */,
 				4C5875671BFA3912003EC2C8 /* ScheduleTableRow.m in Sources */,
+				4C1D50DD1C84EC0C00455706 /* MyScheduleInterfaceController.m in Sources */,
 				4C5875521BFA2779003EC2C8 /* ExtensionDelegate.m in Sources */,
 				4C79D0CD1C02228D00AA6941 /* SessionDetailInterfaceController.m in Sources */,
 				4C73B3731C057617008A1E58 /* ErrorInterfaceController.m in Sources */,

@@ -19,11 +19,13 @@
 
 @implementation InterfaceController
 
-@synthesize objectsTable, json, cscheduleArray, sessionsArray, objectsSession, objectsSchedule, myNewArray;
+@synthesize objectsTable, json, cscheduleArray, sessionsArray, objectsSession, objectsSchedule, myNewArray, myScheduleButton;
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     [self updateWatchTable];
+    [self.myScheduleButton setHidden:YES];
+    
 
     // Configure interface objects here.
 //    
@@ -639,6 +641,11 @@
     [super didDeactivate];
 }
 
+- (IBAction)mySchedButtonPressed {
+    
+    [self pushControllerWithName:@"MyScheduleInterfaceController"
+    context:nil];
+}
 @end
 
 

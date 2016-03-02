@@ -28,6 +28,9 @@
 
 @property (nonatomic, strong) NSMutableArray * sessionsArray;
 
+@property (strong, nonatomic) IBOutlet WKInterfaceButton *myScheduleButton;
+
+- (IBAction)mySchedButtonPressed;
 
 
 @end

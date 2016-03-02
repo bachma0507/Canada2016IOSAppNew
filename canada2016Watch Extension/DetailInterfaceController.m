@@ -58,6 +58,8 @@
     NSLog(@"Schedule myResults count: %lu", (unsigned long)myResults.count);
     if (myResults.count == 0) {
         [self pushControllerWithName:@"ErrorInterfaceController"
+                             //context:nil];
+        //[self presentControllerWithName:@"ErrorInterfaceController"
                              context:nil];
     }
     
