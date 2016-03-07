@@ -75,6 +75,8 @@
     if (myResults.count == 0) {
         [self pushControllerWithName:@"ErrorInterfaceController"
                              context:nil];
+        
+        //[self presentControllerWithName:@"ErrorInterfaceController" context:nil];
     }
     
     else {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hE6-Z8-hpA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
@@ -56,16 +56,17 @@
             </objects>
             <point key="canvasLocation" x="476" y="371"/>
         </scene>
-        <!--Error-->
+        <!--Welcome-->
         <scene sceneID="f0Z-kr-Awi">
             <objects>
-                <controller identifier="ErrorInterfaceController" title="Error" id="hE6-Z8-hpA" customClass="ErrorInterfaceController">
+                <controller identifier="ErrorInterfaceController" title="Welcome" id="hE6-Z8-hpA" customClass="ErrorInterfaceController">
                     <items>
-                        <label width="1" alignment="left" text="Apple Watch is unable to access the BICSI app. Please try again." numberOfLines="5" id="G3q-zR-BBC">
+                        <label width="1" alignment="left" text="Welcome to the 2016 BICSI Canadian Conference &amp; Exhibition" numberOfLines="5" id="G3q-zR-BBC">
                             <fontDescription key="font" type="system" pointSize="10"/>
                         </label>
-                        <button width="1" alignment="left" title="Try Again" id="MWP-eO-eIO">
-                            <fontDescription key="font" type="system" pointSize="12"/>
+                        <button width="1" alignment="left" title="Conference Schedule" id="MWP-eO-eIO">
+                            <color key="backgroundColor" red="0.1333333333" green="0.4549019608" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="12"/>
                             <connections>
                                 <action selector="tryAgain" destination="hE6-Z8-hpA" id="IhU-lC-BBc"/>
                             </connections>

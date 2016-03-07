@@ -31,6 +31,6 @@
 
 - (void)setupCoreData;
 - (void)saveContext;
-- getResults: (NSArray *)myResults;
+//- getResults: (NSArray *)myResults;
 
 @end

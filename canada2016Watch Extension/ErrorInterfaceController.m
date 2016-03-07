@@ -33,9 +33,12 @@
 - (IBAction)tryAgain {
     
     [self pushControllerWithName:@"InterfaceController"
-                         //context:nil];
-    //[self presentControllerWithName:@"InterfaceController"
                          context:nil];
+    //[self presentControllerWithName:@"InterfaceController"
+                         //context:nil];
+    
+    //[self dismissController];
+    
     
 }
 @end
