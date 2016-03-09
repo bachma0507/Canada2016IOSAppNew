@@ -9,20 +9,20 @@
         <scene sceneID="sHK-gU-yHB">
             <objects>
                 <tableViewController id="jFh-Dj-pkF" customClass="PFNewsAlertsViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="lnT-Tl-XBD">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="lnT-Tl-XBD">
                         <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="6tt-2h-iMc" rowHeight="60" style="IBUITableViewCellStyleDefault" id="iXt-pK-Vrn">
-                                <rect key="frame" x="0.0" y="22" width="768" height="60"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="6tt-2h-iMc" rowHeight="80" style="IBUITableViewCellStyleDefault" id="iXt-pK-Vrn">
+                                <rect key="frame" x="0.0" y="22" width="768" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iXt-pK-Vrn" id="SmV-LG-uvi">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6tt-2h-iMc">
-                                            <rect key="frame" x="68" y="0.0" width="632" height="60"/>
+                                            <rect key="frame" x="68" y="0.0" width="632" height="80"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -160,9 +160,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="Already have a user account for the Photo Gallery or Chat Rooms? Then sign in below. If not, create a user account." textAlignment="center" selectable="NO" id="GG8-js-SZX">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="Already have a user account for the Chat Rooms or Photo Gallery? Then sign in below. If not, create a user account." textAlignment="center" selectable="NO" id="GG8-js-SZX">
                                 <rect key="frame" x="9" y="116" width="750" height="111"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="-20" maxX="0.0" maxY="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1447,7 +1448,7 @@
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="My Planner" id="I13-th-QNE">
-                        <barButtonItem key="rightBarButtonItem" title="Import" style="plain" id="1Q6-n6-SaU">
+                        <barButtonItem key="rightBarButtonItem" title="Import" id="1Q6-n6-SaU">
                             <connections>
                                 <action selector="importBtnClicked:" destination="TlJ-KD-jlF" id="vr5-8n-XsO"/>
                             </connections>
