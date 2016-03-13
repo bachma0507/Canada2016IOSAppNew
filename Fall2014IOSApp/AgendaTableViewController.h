@@ -24,6 +24,10 @@
 @property (nonatomic, strong) NSString * sessionName;
 @property (nonatomic, strong) NSString * sessionId;
 @property (nonatomic, strong) NSString * location;
+
+@property (strong, nonatomic) NSArray *dateArray;
+@property (strong, nonatomic) NSMutableDictionary *tempDict;
+
 - (IBAction)importBtnClicked:(id)sender;
 
 

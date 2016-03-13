@@ -394,9 +394,34 @@
         
         NSArray *tArray = [tempDict allKeys];
         //Sort the array in ascending order
-        dateArray = [tArray sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+        //dateArray = [tArray sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
         //NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:nil ascending:NO selector:@selector(localizedCompare:)];
         //dateArray = [tArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        
+        NSMutableArray *arrDate = [[NSMutableArray alloc]init];
+        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+        [dateFormat setDateStyle:NSDateFormatterMediumStyle];
+        for (int i = 0; i<tArray.count; i++) {
+            [arrDate addObject:[dateFormat dateFromString:tArray[i]]];
+            NSLog(@"%d", i);
+        }
+        
+        
+        NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"" ascending:YES];
+        NSArray * newDateArray = [arrDate sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        
+        NSMutableArray * newStringArray = [[NSMutableArray alloc]init];
+        NSDateFormatter *stringFormat = [[NSDateFormatter alloc] init];
+        [stringFormat setDateStyle:NSDateFormatterMediumStyle];
+        for (int i = 0; i<newDateArray.count; i++){
+            
+            [newStringArray addObject:[stringFormat stringFromDate:newDateArray[i]]];
+        }
+        
+        dateArray = newStringArray;
+        
+        NSLog(@"PRINT ARRAY %@", dateArray);
+        
         
         
         [self.myTableView reloadData];

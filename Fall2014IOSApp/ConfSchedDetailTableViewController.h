@@ -18,6 +18,9 @@
 
 //@property (nonatomic, strong) NSMutableArray * results;
 
+@property (strong, nonatomic) NSArray *startTimeArray;
+@property (strong, nonatomic) NSMutableDictionary *tempDict;
+
 @property (nonatomic, strong) CSchedule * cschedule;
 @property (nonatomic, strong) Sessions * mySessions;
 @property BOOL is24h;
