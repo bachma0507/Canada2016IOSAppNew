@@ -394,9 +394,6 @@
         
         NSArray *tArray = [tempDict allKeys];
         //Sort the array in ascending order
-        //dateArray = [tArray sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-        //NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:nil ascending:NO selector:@selector(localizedCompare:)];
-        //dateArray = [tArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
         
         NSMutableArray *arrDate = [[NSMutableArray alloc]init];
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
@@ -420,7 +417,7 @@
         
         dateArray = newStringArray;
         
-        NSLog(@"PRINT ARRAY %@", dateArray);
+        //NSLog(@"PRINT ARRAY %@", dateArray);
         
         
         
