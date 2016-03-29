@@ -228,9 +228,11 @@
     UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
     [header.textLabel setTextColor:[UIColor blackColor]];
     header.textLabel.textAlignment = NSTextAlignmentCenter;
+    header.textLabel.font = [UIFont boldSystemFontOfSize:12];
     
     // Set the background color of our header/footer.
-    header.contentView.backgroundColor = [UIColor colorWithRed:249/255.0 green:255/255.0 blue:235/255.0 alpha:1.0];;
+    //header.contentView.backgroundColor = [UIColor colorWithRed:249/255.0 green:255/255.0 blue:235/255.0 alpha:1.0];;
+    header.contentView.backgroundColor = [UIColor colorWithRed:214/255.0 green:219/255.0 blue:223/255.0 alpha:1.0];
     
     // You can also do this to set the background color of our header/footer,
     //    but the gradients/other effects will be retained.
@@ -239,7 +241,8 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 50.0f;
+    //return 50.0f;
+    return 30.0f;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

@@ -2925,12 +2925,12 @@
 		4CCB78E41843B85900D9D1C6 /* ConferenceSchedule */ = {
 			isa = PBXGroup;
 			children = (
-				4CA637E81BEA5A4B0068BA25 /* ConfSchedDetailTableViewController.m */,
-				4C6A496817D0BDD9003941C7 /* ConfSchedTableViewController.h */,
-				4C6A496917D0BDD9003941C7 /* ConfSchedTableViewController.m */,
 				4C6A496E17D0CB92003941C7 /* ConfSchedDetailTableViewController.h */,
+				4CA637E81BEA5A4B0068BA25 /* ConfSchedDetailTableViewController.m */,
 				4C28488017D2BB5600F6C6B2 /* confSchedDetailViewCell.h */,
 				4C28488117D2BB5600F6C6B2 /* confSchedDetailViewCell.m */,
+				4C6A496817D0BDD9003941C7 /* ConfSchedTableViewController.h */,
+				4C6A496917D0BDD9003941C7 /* ConfSchedTableViewController.m */,
 			);
 			name = ConferenceSchedule;
 			sourceTree = "<group>";
