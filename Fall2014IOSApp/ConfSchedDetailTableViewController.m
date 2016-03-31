@@ -238,7 +238,7 @@
     
     cell.sessionTime.text = sessionTime;
     cell.sessionTime.textColor = [UIColor blackColor];
-    cell.sessionLocation.textColor = [UIColor blueColor];
+    cell.sessionLocation.textColor = [UIColor colorWithRed:128/255.0 green:139/255.0 blue:150/255.0 alpha:1.0];
     cell.itscecs.hidden = YES;
     //cell.sessionStatus.hidden = YES;
     //}

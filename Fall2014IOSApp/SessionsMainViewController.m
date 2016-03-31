@@ -434,7 +434,7 @@
         //cell.detailTextLabel.font = [UIFont fontWithName:@"Arial" size:11.0];
         //cell.textLabel.font = [UIFont fontWithName:@"Arial-Bold" size:10.0];
         cell.detailTextLabel.textColor = [UIColor blackColor];
-        cell.location.textColor = [UIColor blueColor];
+        cell.location.textColor = [UIColor colorWithRed:128/255.0 green:139/255.0 blue:150/255.0 alpha:1.0];
         //cell.textLabel.font = [UIFont systemFontOfSize:13.0];
         //cell.textLabel.textColor = [UIColor brownColor];
         

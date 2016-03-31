@@ -170,7 +170,7 @@
     cell.sessionNameLabel.text = [object valueForKey:@"sessionname"];
     cell.sessionNameLabel.textColor = [UIColor redColor];
     cell.location.text = [object valueForKey:@"location"];
-    cell.location.textColor = [UIColor blueColor];
+    cell.location.textColor = [UIColor colorWithRed:128/255.0 green:139/255.0 blue:150/255.0 alpha:1.0];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
@@ -201,12 +201,11 @@
 {
     
     if(indexPath.row % 2 == 0){
-        //UIColor *altCellColor = [UIColor colorWithRed:235/255.0 green:240/255.0 blue:233/255.0 alpha:1.0];
-        UIColor *altCellColor = [UIColor colorWithRed:246/255.0 green:235/255.0 blue:253/255.0 alpha:1.0];
+        UIColor *altCellColor = [UIColor colorWithRed:246/255.0 green:246/255.0 blue:246/255.0 alpha:1.0];
         cell.backgroundColor = altCellColor;
     }
     else{
-        cell.backgroundColor = [UIColor whiteColor];
+        cell.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1.0];;
     }
 }
 

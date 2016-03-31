@@ -22,7 +22,7 @@
     
     
     //NSString * stream = @"https://www.youtube.com/watch?v=jF2e0sMOwjo";
-    NSString * stream = @"https://www.youtube.com/watch?v=7ICwdHBcl8Q";
+    NSString * stream = @"https://www.youtube.com/watch?v=K-jUpwEIi9s";
     
     //NSString * stream = @"http://www.bicsi.org/directory/uplink/default.aspx?id=8027";
     NSURL * url = [NSURL URLWithString:stream];
